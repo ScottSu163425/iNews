@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_under"
+    tools:context="com.su.scott.inews.activity.FilmSearchActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_filmsearch"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:popupTheme="@style/AppTheme.PopupOverlay"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:navigationIcon="?attr/homeAsUpIndicator"></android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/padding_xs"
+                android:layout_marginLeft="@dimen/padding_s"
+                android:layout_marginTop="@dimen/padding_xs"
+                android:layout_weight="8.5"
+                android:background="@drawable/bg_et"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_input_filmsearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.5"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="@string/hint_film_search"
+                    android:maxLength="20"
+                    android:paddingLeft="@dimen/padding_s"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark_1"
+                    android:textColorHint="@color/text_dark_3"
+                    android:textSize="@dimen/text_size_title" />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_speak_filmsearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/selector_transparent_grey"
+                    android:padding="@dimen/padding_s"
+                    android:src="@drawable/ic_mic_grey600_36dp" />
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/imgbtn_search_filmsearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:background="@drawable/selector_transparent_white"
+                android:src="@drawable/ic_search_white_36dp" />
+
+
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_key_word_flow_filmsearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_s"
+                android:padding="@dimen/padding_s">
+
+
+
+                <com.su.scott.inews.widget.KeywordsFlow
+                    android:id="@+id/key_words_flow_filmsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+            </android.support.v7.widget.CardView>
+            <View
+                android:id="@+id/anchor_filmsearch"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="-10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fb_change_filmsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_cached_white_24dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="@dimen/evelation_fb"
+        app:layout_anchor="@id/anchor_filmsearch"
+        app:layout_anchorGravity="bottom|center" />
+</android.support.design.widget.CoordinatorLayout>

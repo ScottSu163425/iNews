@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="library-0.1.1">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/me.nlmartian.silkcal/library/0.1.1/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/me.nlmartian.silkcal/library/0.1.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.nlmartian.silkcal/library/0.1.1/4c955092174fe472ecf40b5e5c00aa6e9eb7e283/library-0.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

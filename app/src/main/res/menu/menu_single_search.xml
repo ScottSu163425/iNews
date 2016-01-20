@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.su.scott.inews.activity.ScrollingActivity">
+    <item
+        android:id="@+id/action_search_single"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="search"
+        app:showAsAction="ifRoom" />
+</menu>

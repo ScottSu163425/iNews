@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_transparent_grey"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/iv_cover_recommend_film_layout"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_load_error" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name_recommend_film_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_header_actior_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:maxWidth="150dp"
+        android:singleLine="true"
+        android:text="film"
+        android:textColor="@color/text_dark_2"
+        android:textSize="@dimen/text_size_subhead" />
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding_s"
+    android:layout_marginRight="@dimen/padding_s"
+    android:layout_marginTop="@dimen/spacing_card_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_s"
+        android:paddingLeft="@dimen/padding_xs"
+        android:paddingRight="@dimen/padding_xs"
+        android:paddingTop="@dimen/padding_s">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_rankid_item_film_fank"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="@dimen/padding_xs"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="@color/text_dark_2"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="italic|bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_xs"
+            android:paddingTop="@dimen/padding_xs">
+
+
+            <TextView
+                android:id="@+id/tv_filmname_item_filmrank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/text_dark_1"
+                android:textSize="@dimen/text_size_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_s"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="周末票房:"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="@dimen/text_size_body_1" />
+
+                <TextView
+                    android:id="@+id/tv_week_box_filmrank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_s"
+                    android:text=" "
+                    android:textColor="@color/text_dark_1"
+                    android:textSize="@dimen/text_size_body_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_xs"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计票房:"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="@dimen/text_size_body_1" />
+
+                <TextView
+                    android:id="@+id/tv_total_box_filmrank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_s"
+                    android:text=" "
+                    android:textColor="@color/text_dark_1"
+                    android:textSize="@dimen/text_size_body_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_xs"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="榜单时间:"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="@dimen/text_size_body_1" />
+
+                <TextView
+                    android:id="@+id/tv_rank_week_filmrank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_s"
+                    android:text=""
+                    android:textColor="@color/text_dark_1"
+                    android:textSize="@dimen/text_size_body_2" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

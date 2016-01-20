@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_under"
+    tools:context=".activity.MainActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar_webview_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/AppTheme.AppBarOverlay">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <WebView
+                android:id="@+id/web_view_webview_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <ProgressBar
+                android:id="@+id/pb_progress_webview_activity"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fb_webview_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/padding_l"
+        android:clickable="true"
+        android:src="@drawable/ic_favorite_white_48dp"
+        app:backgroundTint="#3F51B5"
+        app:elevation="12dp"
+        app:fabSize="normal" />
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_under">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_translation"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/AppTheme.AppBarOverlay"></android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_s"
+                android:layout_marginTop="@dimen/padding_s"
+                android:layout_marginRight="@dimen/padding_s">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_item_m"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_item_m"
+                        android:layout_weight="4">
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_from_translation"
+                            android:layout_width="100dp"
+                            android:layout_height="@dimen/height_item_s"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_swap_horiz_grey600_48dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_item_m"
+                        android:layout_weight="4">
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_to_translation"
+                            android:layout_width="100dp"
+                            android:layout_height="@dimen/height_item_s"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_input_translation"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="@dimen/padding_s"
+                android:layout_marginRight="@dimen/padding_s"
+                android:layout_marginTop="@dimen/padding_m">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/et_input_translation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/padding_s"
+                        android:background="@color/transparent"
+                        android:hint="请手动/语音输入要翻译的内容"
+                        android:textColor="@color/text_dark_2"
+                        android:textSize="@dimen/text_size_subhead" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_speak_transltaion"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/selector_transparent_grey"
+                        android:src="@drawable/ic_mic_grey600_36dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_output_translation"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="@dimen/padding_s"
+                android:background="@drawable/bg_paper"
+                android:visibility="invisible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/et_output_translation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/padding_s"
+                        android:background="@color/transparent"
+                        android:editable="false"
+                        android:hint="翻译结果"
+                        android:textColor="@color/text_dark_1"
+                        android:textSize="@dimen/text_size_title"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_read_translation"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/selector_transparent_grey"
+                        android:src="@drawable/ic_loudspeaker_grey600_36dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fb_translate_translation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_done_white_24dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="@dimen/evelation_fb"
+        app:layout_anchor="@id/card_input_translation"
+        app:layout_anchorGravity="bottom|center" />
+</android.support.design.widget.CoordinatorLayout>

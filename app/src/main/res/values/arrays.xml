@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="horoscrope_names">
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+    </string-array>
+    <string-array name="horoscrope_decs">
+        <item>白羊座 —— 精力旺盛、活力充沛的星座。</item>
+        <item>金牛座 —— 慢条斯理的星座。</item>
+        <item>双子座 —— 变化速度快如风的星座。</item>
+        <item>巨蟹座 —— 非常需要爱与安定的星座。</item>
+        <item>狮子座 —— 讲究气派华丽的星座。</item>
+        <item>处女座 —— 有点挑剔又追求完美的星座。</item>
+        <item>天秤座 —— 爱美又怕空虚的星座。</item>
+        <item>天蝎座 —— 神秘诡谲，令人费疑猜的星座。</item>
+        <item>射手座 —— 自由浪漫也滥情的星座。</item>
+        <item>摩羯座 —— 严谨刻板，稳重老成的星座。</item>
+        <item>水瓶座 —— 思想超前，理性自重的星座。</item>
+        <item>双鱼座 —— 多愁敏感，爱作梦、幻想的星座。</item>
+    </string-array>
+
+
+</resources>

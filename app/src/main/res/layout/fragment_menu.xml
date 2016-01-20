@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_item_collection_menu_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_common_item"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_favorite_grey600_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/menu_name_collection"
+                android:textColor="@color/text_dark_2"
+                android:textSize="@dimen/text_size_body_2" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider_line_m"
+            android:background="@color/bg_under" />
+
+        <RelativeLayout
+            android:id="@+id/rl_item_filminfo_menu_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_common_item"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_film_grey600_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv3"
+                android:layout_centerHorizontal="true"
+                android:text="@string/menu_name_filminfo"
+                android:textColor="@color/text_dark_2"
+                android:textSize="@dimen/text_size_body_2" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider_line_m"
+            android:background="@color/bg_under" />
+
+        <RelativeLayout
+            android:id="@+id/rl_item_history_today_menu_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_common_item"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_history_today_balance_grey600_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv4"
+                android:layout_centerHorizontal="true"
+                android:text="@string/menu_name_history_today"
+                android:textColor="@color/text_dark_2"
+                android:textSize="@dimen/text_size_body_2" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider_line_m"
+            android:background="@color/bg_under" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_item_translation_menu_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_common_item"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_translate_grey_600_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv2"
+                android:layout_centerHorizontal="true"
+                android:text="@string/menu_name_transltaion"
+                android:textColor="@color/text_dark_2"
+                android:textSize="@dimen/text_size_body_2" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider_line_m"
+            android:background="@color/bg_under" />
+
+    </LinearLayout>
+
+</RelativeLayout>
