@@ -127,14 +127,12 @@ public class HistoryTodayActivity extends BaseActivity implements DatePickerCont
         mListAdapter.setOnItemClickListener(new HistoryTodayListAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                AnimUtil.shrink(view);
                 loadImage(mTopAreaIv, mListAdapter.getBeanList().get(position).getPic());
                 mTopDesTv.setText(StringUtil.addBeginSpace(mListAdapter.getBeanList().get(position).getDes(), 4));
             }
 
             @Override
             public void onItemLongClick(View view, final int position) {
-                AnimUtil.pulseBounce(view);
             }
         });
 

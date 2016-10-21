@@ -270,16 +270,16 @@ public class NewsDetailActivity extends BaseActivity {
         if (Tools.isFastClick()) {
             return;
         }
-
-        int id = v.getId();
-
-        if (R.id.fb_read_news_detail == id) {
-            if (!isReadingOn) {
-                startReading(mNewsBean.getTitle() + "    " + mNewsBean.getDescription());
-            } else {
-                stopReading();
-            }
-        }
+//
+//        int id = v.getId();
+//
+//        if (R.id.fb_read_news_detail == id) {
+//            if (!isReadingOn) {
+//                startReading(mNewsBean.getTitle() + "    " + mNewsBean.getDescription());
+//            } else {
+//                stopReading();
+//            }
+//        }
 
     }
 

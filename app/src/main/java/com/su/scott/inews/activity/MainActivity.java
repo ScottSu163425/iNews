@@ -1,5 +1,6 @@
 package com.su.scott.inews.activity;
 
+import android.Manifest;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -24,6 +25,7 @@ import com.su.scott.inews.fragment.MenuFragment;
 import com.su.scott.inews.fragment.NewsListFragment;
 import com.su.scott.inews.iamge.LruBitmapCache;
 import com.su.scott.inews.manager.AppManager;
+import com.su.scott.inews.util.PermissionUtil;
 import com.su.scott.inews.util.Snack;
 import com.su.scott.inews.util.Tools;
 
@@ -71,7 +73,9 @@ public class MainActivity extends BaseActivity implements MenuFragment.IMenuItem
 
     @Override
     protected void initPreData() {
-
+//        PermissionUtil.checkPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE,0);
+        PermissionUtil.checkPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE,1);
+        PermissionUtil.checkPermission(this, Manifest.permission.RECORD_AUDIO,2);
     }
 
     @Override

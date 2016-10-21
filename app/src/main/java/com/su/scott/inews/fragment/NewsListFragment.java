@@ -101,8 +101,6 @@ public class NewsListFragment extends BaseFragment {
                 if (Tools.isFastClick()) {
                     return;
                 }
-                AnimUtil.shrink(view);
-
                 NewsBean news = mNewsAdapter.getNewsBeanList().get(position);
                 Intent intent = new Intent(activity, NewsDetailActivity.class);
                 Bundle data = new Bundle();
@@ -113,7 +111,6 @@ public class NewsListFragment extends BaseFragment {
 
             @Override
             public void onItemLongClick(View view, int position) {
-                AnimUtil.pulseBounce(view);
             }
         });
 

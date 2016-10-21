@@ -131,8 +131,6 @@ public class CollectionActivity extends BaseActivity {
                 if (Tools.isFastClick()) {
                     return;
                 }
-                AnimUtil.shrink(view);
-
                 CollectionBean collectionBean = mCollectionAdapter.getCollectionList().get(position);
                 NewsBean news = NewsListAdapter.CollectionToNews(collectionBean);
                 Intent intent = new Intent(CollectionActivity.this, NewsDetailActivity.class);
@@ -147,8 +145,6 @@ public class CollectionActivity extends BaseActivity {
                 if (Tools.isFastClick()) {
                     return;
                 }
-
-                AnimUtil.pulseBounce(view);
                 Snack.showShort(view, "是否移除该条收藏？", "OK", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

@@ -26,7 +26,7 @@
     <dimen name="app_bar_height">180dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="text_margin">16dp</dimen>
-    <dimen name="spacing_card_vertical">3dp</dimen>
+    <dimen name="spacing_card_vertical">5dp</dimen>
     <dimen name="evelation_fb">16dp</dimen>
 
     <!-- Height,weight -->

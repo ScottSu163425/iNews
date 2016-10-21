@@ -3,9 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginTop="@dimen/spacing_card_vertical"
     android:layout_marginBottom="@dimen/spacing_card_vertical"
-    android:layout_marginLeft="@dimen/padding_s"
-    android:layout_marginRight="@dimen/padding_s">
+    android:layout_marginLeft="@dimen/padding_m"
+    android:layout_marginRight="@dimen/padding_m"
+    android:stateListAnimator="@drawable/selector_elevation">
 
     <!-- android:foreground="?attr/selectableItemBackground"
     CardView 点击颜色效果

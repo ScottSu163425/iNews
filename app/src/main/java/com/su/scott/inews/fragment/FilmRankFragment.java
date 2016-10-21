@@ -88,13 +88,11 @@ public class FilmRankFragment extends BaseFragment {
                 if (Tools.isFastClick()) {
                     return;
                 }
-                AnimUtil.shrink(view);
                 requestFilmInfo(mAdapter.getBeanList().get(position).getName());
             }
 
             @Override
             public void onItemLongClick(View view, int position) {
-                AnimUtil.pulseBounce(view);
             }
         });
 

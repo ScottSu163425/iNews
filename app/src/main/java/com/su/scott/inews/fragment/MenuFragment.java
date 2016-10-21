@@ -65,7 +65,6 @@ public class MenuFragment extends BaseFragment implements View.OnClickListener {
     protected void initListener() {
         for (int i = 0; i < ITEM_COUNT; i++) {
             mItems[i].setOnClickListener(this);
-            mItems[i].setOnLongClickListener(mLongClickListener);
         }
     }
 
@@ -96,14 +95,6 @@ public class MenuFragment extends BaseFragment implements View.OnClickListener {
         startActivity(new Intent(activity, target));
         menuItemClickListener.onMenuItemClick();
     }
-
-    private View.OnLongClickListener mLongClickListener = new View.OnLongClickListener() {
-        @Override
-        public boolean onLongClick(View v) {
-            AnimUtil.shrink(v);
-            return true;
-        }
-    };
 
     public interface IMenuItemClickListener {
         public void onMenuItemClick();

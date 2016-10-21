@@ -129,20 +129,20 @@ public class TranslationActivity extends BaseActivity {
             return;
         }
 
-        int id = v.getId();
-
-        if (R.id.fb_translate_translation == id) {
-            translate(mInputEt, LANGUAGE_FLAG[mFromSpinner.getSelectedItemPosition()], LANGUAGE_FLAG[mToSpinner.getSelectedItemPosition()]);
-        } else if (R.id.imgbtn_speak_transltaion == id) {
-            speak();
-        } else if (R.id.imgbtn_read_translation == id) {
-            String targetLang = LANGUAGE_NAME[mToSpinner.getSelectedItemPosition()];
-            if (!("中文".equals(targetLang) || ("英语".equals(targetLang)))) {
-                Snack.showShort(v, targetLang + "不支持语音朗读");
-                return;
-            }
-            read(mOutputEt.getText().toString().trim());
-        }
+//        int id = v.getId();
+//
+//        if (R.id.fb_translate_translation == id) {
+//            translate(mInputEt, LANGUAGE_FLAG[mFromSpinner.getSelectedItemPosition()], LANGUAGE_FLAG[mToSpinner.getSelectedItemPosition()]);
+//        } else if (R.id.imgbtn_speak_transltaion == id) {
+//            speak();
+//        } else if (R.id.imgbtn_read_translation == id) {
+//            String targetLang = LANGUAGE_NAME[mToSpinner.getSelectedItemPosition()];
+//            if (!("中文".equals(targetLang) || ("英语".equals(targetLang)))) {
+//                Snack.showShort(v, targetLang + "不支持语音朗读");
+//                return;
+//            }
+//            read(mOutputEt.getText().toString().trim());
+//        }
     }
 
     private void speak() {
@@ -195,7 +195,7 @@ public class TranslationActivity extends BaseActivity {
     }
 
     private void translateRequest(String input, String fromFlag, String toFlag) {
-//        showPd();
+        showPd();
         CustomRequest.getInstance(this).getString(requestQueue,TAG,Constant.URL_TRANSLATION, new CustomRequest.CustomParam().put("apikey", Constant.API_KEY_APISTORE), new CustomRequest.CustomParam().put("query", input).put("from", fromFlag).put("to", toFlag), new CustomRequest.SimpleListener() {
             @Override
             public void onSuccess(String response) {

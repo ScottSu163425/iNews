@@ -90,14 +90,14 @@ public class FilmRankListAdapter extends RecyclerView.Adapter<FilmRankListAdapte
                 }
             });
 
-            holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View v) {
-                    int pos = holder.getLayoutPosition();
-                    onItemClickListener.onItemLongClick(holder.itemView, pos);
-                    return true;
-                }
-            });
+//            holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+//                @Override
+//                public boolean onLongClick(View v) {
+//                    int pos = holder.getLayoutPosition();
+//                    onItemClickListener.onItemLongClick(holder.itemView, pos);
+//                    return true;
+//                }
+//            });
         }
 
         holder.itemView.setTag(bean);

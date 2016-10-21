@@ -130,9 +130,9 @@ public class FilmSearchActivity extends BaseActivity {
             mKeywordsFlow.rubKeywords();
             feedKeywordsFlow(mKeywordsFlow, KEY_WORDS);
             mKeywordsFlow.go2Show(KeywordsFlow.ANIMATION_OUT);
-        } else if (R.id.imgbtn_speak_filmsearch == id) {
+        } /*else if (R.id.imgbtn_speak_filmsearch == id) {
             speak();
-        } else if (R.id.imgbtn_search_filmsearch == id) {
+        }*/ else if (R.id.imgbtn_search_filmsearch == id) {
             search(mInputEt);
         }
 

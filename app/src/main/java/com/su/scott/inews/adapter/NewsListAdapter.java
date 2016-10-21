@@ -92,15 +92,15 @@ public class NewsListAdapter extends RecyclerView.Adapter<NewsListAdapter.ViewHo
                     onItemClickListener.onItemClick(holder.itemView, pos);
                 }
             });
-
-            holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View v) {
-                    int pos = holder.getLayoutPosition();
-                    onItemClickListener.onItemLongClick(holder.itemView, pos);
-                    return true;
-                }
-            });
+//
+//            holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+//                @Override
+//                public boolean onLongClick(View v) {
+//                    int pos = holder.getLayoutPosition();
+//                    onItemClickListener.onItemLongClick(holder.itemView, pos);
+//                    return true;
+//                }
+//            });
         }
 
         holder.itemView.setTag(news);
